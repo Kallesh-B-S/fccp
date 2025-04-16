@@ -18,7 +18,7 @@
       <fieldset>
         <label>
           Select your city?
-          <select id="dropdown">
+          <select id="dropdown" class="cp">
           <option value="">SELECT</option>
           <option value="Bengaluru">Bengaluru</option>
           <option value="Mysore">Mysore</option>
@@ -27,18 +27,19 @@
       </fieldset>
       <fieldset>
         <legend>For workshop which mode you prefer?</legend>
-        <labe><input type="radio" name="mode" value="offline"> offline</label>
-        <labe><input value="online" type="radio" name="mode" checked> online</label>
+        <label class="cp" for="offline"><input id="offline" type="radio" name="mode" value="offline"> offline</label>
+        <label class="cp" for="online"><input id="online" value="online" type="radio" name="mode" checked> online</label>
       </fieldset>
       <fieldset>
-        <label>What are the languages you choose among below?<label>
-          <label><input type="checkbox" value="java">Java </label>
-          <label><input type="checkbox" value="python">Python </label>
-          <label><input type="checkbox" value="js">JavaScript</label>
-          <label><input type="checkbox" value="c++">c++</label>
+        <label id="label-desc-choose-lang">What are the languages you choose among below?</label>
+          <label class="cp"><input type="checkbox" value="java"> Java </label>
+          <label class="cp"><input type="checkbox" value="python"> Python </label>
+          <label class="cp"><input type="checkbox" value="js"> JavaScript</label>
+          <label class="cp"><input type="checkbox" value="c++"> c++</label>
       </fieldset>
       <fieldset>
-        <label>If you have an language which you like most apart from feel free to let us know through below<textarea rows="3" cols="30"></textarea></label>
+        <label>If you have an language which you like most apart from feel free to let us know through below :
+          <textarea placeholder="Enter your thoughts" rows="3" cols="30"></textarea></label>
       </fieldset>
       <input id="submit" type="submit" value="Submit">
     </form>
