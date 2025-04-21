@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A comprehensive guide to understanding HTML elements and structure." />
+  <meta name="author" content="Kallesh B S" />
+  <link rel="stylesheet" href="p14.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="nav-title"><h1>HTML</h1></header>
+    <div class="nav-body">
+      <ul>
+        <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+        <li><a class="nav-link" href="#Tags_in_HTML">Tags in HTML</a></li>
+        <li><a class="nav-link" href="#Element_in_HTML">Element in HTML</a></li>
+        <li><a class="nav-link" href="#Void_Element">Void Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>
+        <h1>
+          Introduction to HTML
+        </h1>
+      </header>
+      <p>HTML, stands for <strong>HyperText Markup Language</strong></p>
+      <p>HTML is the foundation of most webpages. It's a language used to structure and display content on the web,
+        defining the content and structure of documents that are displayed in a web browser. HTML uses elements (like
+        tags and attributes) to organize text, images, links, and other multimedia elements.
+      </p>
+      <ul>
+        <li>
+          <p>The <span class="html-tag">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5
+            document</p>
+        </li>
+        <li>
+          <p>The <span class="html-tag">&lt;head&gt;</span> element contains meta information about the HTML page</p>
+        </li>
+        <li>
+          <p>The <span class="html-tag">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown
+            in the browser's title bar or in the page's tab)</p>
+        </li>
+        <li>
+          <p>The <span class="html-tag">&lt;body&gt;</span> element defines the document's body, and is a container for
+            all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+        </li>
+        <li>
+          <p>The <span class="html-tag">&lt;h1&gt;</span> element defines a large heading</p>
+        </li>
+        <li>
+          <p>The <span class="html-tag">&lt;p&gt;</span> element defines a paragraph</p>
+        </li>
+      </ul>
+
+      <code class="code">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html lang="en"&gt;<br>
+          &lt;head&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+      </code>
+    </section>
+    <section class="main-section" id="Tags_in_HTML">
+      <header>
+        <h1>
+          Tags in HTML
+        </h1>
+      </header>
+      <p>HTML tags are the building blocks of web pages, providing instructions to browsers on how to display content.
+      </p>
+      <p>
+        They're enclosed in angle brackets &lt; &gt; and typically come in pairs (opening and closing). Some common
+        examples include
+        <span class="html-tag">&lt;h1&gt;</span> for headings,
+        <span class="html-tag">&lt;p&gt;</span> for paragraphs,
+        <span class="html-tag">&lt;a&gt;</span> for links, and
+        <span class="html-tag">&lt;img&gt;</span> for images.
+      </p>
+      <p>
+        HTML Tags can be divided into various types based on different aspects,<br>
+        In this article we’ve explained different HTML Tags based on various classifications.
+      </p>
+      <ul>
+        <li>
+          <h2>Paired HTML Tags</h2>
+          <p>Examples include &lt;div&gt; and &lt;p&gt; which require both opening and closing tags.</p>
+        </li>
+
+        <li>
+          <h2>Unpaired HTML Tags</h2>
+          <p>Examples include &lt;img&gt; and &lt;br&gt; which do not require closing tags and these are also called
+            self closing tags or void Element.</p>
+        </li>
+      </ul>
+      <code>
+        &lt;div&gt;This is div Element&lt;/div&gt;<br>
+        &lt;p&gt;This is a paragraph Element&lt;/p&gt;
+      </code>
+      <code>
+        <span class="html-tag">&lt;img&gt;</span> This is image Element<br>
+        (or)<br>
+        <span class="html-tag">&lt;img /&gt;</span> This is image Element <br><br>
+
+        <span>&lt;br&gt;</span> This is a line break Element <br>
+          (or)<br>
+        <span>&lt;br /&gt;</span> This is a line break Element
+      </code>
+    </section>
+    <section class="main-section" id="Element_in_HTML">
+      <header>
+        <h1>
+          Element in HTML
+        </h1>
+      </header>
+      <p>
+        In HTML, an element is a building block of a web page that defines a section or a component of the page's
+        structure and content. It's composed of a start tag, content (which can include other elements or text), and an
+        end tag
+      </p>
+      <code>
+        <span class="html-tag">&lt;h1&gt;</span> is a Heading Element<span class="html-tag">&lt;/h1&gt;</span><br>
+        <span class="html-tag">&lt;p&gt;</span>This is a paragraph Element<span class="html-tag">&lt;/p&gt;</span>
+      </code>
+    </section>
+    <section class="main-section" id="Void_Element">
+      <header>
+        <h1>
+          Void Element
+        </h1>
+      </header>
+      <p>
+        Some HTML elements, like
+        <span class="html-tag">&lt;br&gt;</span>,
+        <span class="html-tag">&lt;hr&gt;</span>,
+        <span class="html-tag">&lt;img&gt;</span>, and
+        <span class="html-tag">&lt;input&gt;</span>,
+        are self-closing and don't have an end tag, as they represent an event or a visual element.
+      </p>
+    </section>
+    <section class="main-section" id="Heading_Element">
+      <header>
+        <h1>
+          Heading Element
+        </h1>
+      </header>
+      <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+      <p>
+        HTML headings are defined with the
+        <span class="html-tag">&lt;h1&gt;</span> to
+        <span class="html-tag">&lt;h6&gt;</span> tags.
+      </p>
+      <p>
+        <span class="html-tag">&lt;h1&gt;</span> defines the most important heading.
+        <span class="html-tag">&lt;h6&gt;</span> defines the least important heading.
+      </p>
+      <code>
+        <span class="html-tag">&lt;h1&gt;</span>Heading 1<span class="html-tag">&lt;/h1&gt;</span><br>
+        <span class="html-tag">&lt;h2&gt;</span>Heading 2<span class="html-tag">&lt;/h2&gt;</span><br>
+        <span class="html-tag">&lt;h3&gt;</span>Heading 3<span class="html-tag">&lt;/h3&gt;</span><br>
+        <span class="html-tag">&lt;h4&gt;</span>Heading 4<span class="html-tag">&lt;/h4&gt;</span><br>
+        <span class="html-tag">&lt;h5&gt;</span>Heading 5<span class="html-tag">&lt;/h5&gt;</span><br>
+        <span class="html-tag">&lt;h6&gt;</span>Heading 6<span class="html-tag">&lt;/h6&gt;</span>
+      </code>
+    </section>
+  </main>
+</body>
+
+</html>
