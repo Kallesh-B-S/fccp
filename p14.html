@@ -12,14 +12,26 @@
 
 <body>
   <nav id="navbar">
-    <header class="nav-title"><h1>HTML</h1></header>
+    <header class="nav-title">
+      <h1>HTML</h1>
+    </header>
     <div class="nav-body">
       <ul>
-        <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
-        <li><a class="nav-link" href="#Tags_in_HTML">Tags in HTML</a></li>
-        <li><a class="nav-link" href="#Element_in_HTML">Element in HTML</a></li>
-        <li><a class="nav-link" href="#Void_Element">Void Element</a></li>
-        <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
+        <li onclick="location.href='#Introduction_to_HTML';">
+          <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+        </li>
+        <li onclick="location.href='#Tags_in_HTML';">
+          <a class="nav-link" href="#Tags_in_HTML">Tags in HTML</a>
+        </li>
+        <li onclick="location.href='#Element_in_HTML';">
+          <a class="nav-link" href="#Element_in_HTML">Element in HTML</a>
+        </li>
+        <li onclick="location.href='#Void_Element';">
+          <a class="nav-link" href="#Void_Element">Void Element</a>
+        </li>
+        <li onclick="location.href='#Heading_Element';">
+          <a class="nav-link" href="#Heading_Element">Heading Element</a>
+        </li>
         <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
         <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
         <li><a class="nav-link" href="#Heading_Element">Heading Element</a></li>
@@ -36,14 +48,14 @@
   <main id="main-doc">
     <section class="main-section" id="Introduction_to_HTML">
       <header>
-        <h1>
-          Introduction to HTML
-        </h1>
+        <h1>Introduction to HTML</h1>
       </header>
       <p>HTML, stands for <strong>HyperText Markup Language</strong></p>
-      <p>HTML is the foundation of most webpages. It's a language used to structure and display content on the web,
+      <p>
+        HTML is the foundation of most webpages. It's a language used to structure and display content on the web,
         defining the content and structure of documents that are displayed in a web browser. HTML uses elements (like
-        tags and attributes) to organize text, images, links, and other multimedia elements.
+        <span class="html-tag">&lt;tags&gt;</span> and <span class="html-tag">attributes</span>) to organize text,
+        images, links, and other multimedia elements.
       </p>
       <ul>
         <li>
@@ -70,27 +82,28 @@
       </ul>
 
       <code class="code">
-          &lt;!DOCTYPE html&gt;<br>
-          &lt;html lang="en"&gt;<br>
-          &lt;head&gt;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
-          &lt;/head&gt;<br>
-          &lt;body&gt;<br>
-          &lt;/body&gt;<br>
-          &lt;/html&gt;<br>
+        <span class="html-tag">&lt;!DOCTYPE html&gt;</span><br>
+        <span class="html-tag">&lt;html lang="en"&gt;</span><br>
+        <span class="html-tag">&lt;head&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">&lt;meta charset="UTF-8"&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="html-tag">&lt;title&gt;</span>Document<span class="html-tag">&lt;/title&gt;</span><br>
+        <span class="html-tag">&lt;/head&gt;</span><br>
+        <span class="html-tag">&lt;body&gt;</span><br>
+        <span class="html-tag">&lt;/body&gt;</span><br>
+        <span class="html-tag">&lt;/html&gt;</span><br>
       </code>
     </section>
+
     <section class="main-section" id="Tags_in_HTML">
       <header>
-        <h1>
-          Tags in HTML
-        </h1>
+        <h1>Tags in HTML</h1>
       </header>
-      <p>HTML tags are the building blocks of web pages, providing instructions to browsers on how to display content.
+      <p>
+        HTML tags are the building blocks of web pages, providing instructions to browsers on how to display content.
       </p>
       <p>
-        They're enclosed in angle brackets &lt; &gt; and typically come in pairs (opening and closing). Some common
+        They're enclosed in angle brackets <span class="html-tag">&lt; &gt;</span> and typically come in pairs (opening
+        and closing). Some common
         examples include
         <span class="html-tag">&lt;h1&gt;</span> for headings,
         <span class="html-tag">&lt;p&gt;</span> for paragraphs,
@@ -104,50 +117,52 @@
       <ul>
         <li>
           <h2>Paired HTML Tags</h2>
-          <p>Examples include &lt;div&gt; and &lt;p&gt; which require both opening and closing tags.</p>
+          <p>
+            Examples include <span class="html-tag">&lt;div&gt;</span> and <span class="html-tag">&lt;p&gt;</span> which
+            require both opening and closing tags.
+          </p>
         </li>
-
         <li>
           <h2>Unpaired HTML Tags</h2>
-          <p>Examples include &lt;img&gt; and &lt;br&gt; which do not require closing tags and these are also called
-            self closing tags or void Element.</p>
+          <p>
+            Examples include <span class="html-tag">&lt;img&gt;</span> and <span class="html-tag">&lt;br&gt;</span>
+            which do not require closing tags and these are also called
+            self-closing tags or void Elements.
+          </p>
         </li>
       </ul>
       <code>
-        &lt;div&gt;This is div Element&lt;/div&gt;<br>
-        &lt;p&gt;This is a paragraph Element&lt;/p&gt;
+        <span class="html-tag">&lt;div&gt;</span>This is div Element<span class="html-tag">&lt;/div&gt;</span><br>
+        <span class="html-tag">&lt;p&gt;</span>This is a paragraph Element<span class="html-tag">&lt;/p&gt;</span>
       </code>
       <code>
         <span class="html-tag">&lt;img&gt;</span> This is image Element<br>
         (or)<br>
         <span class="html-tag">&lt;img /&gt;</span> This is image Element <br><br>
-
-        <span>&lt;br&gt;</span> This is a line break Element <br>
-          (or)<br>
-        <span>&lt;br /&gt;</span> This is a line break Element
+        <span class="html-tag">&lt;br&gt;</span> This is a line break Element <br>
+        (or)<br>
+        <span class="html-tag">&lt;br /&gt;</span> This is a line break Element
       </code>
     </section>
+
     <section class="main-section" id="Element_in_HTML">
       <header>
-        <h1>
-          Element in HTML
-        </h1>
+        <h1>Element in HTML</h1>
       </header>
       <p>
         In HTML, an element is a building block of a web page that defines a section or a component of the page's
         structure and content. It's composed of a start tag, content (which can include other elements or text), and an
-        end tag
+        end tag.
       </p>
       <code>
         <span class="html-tag">&lt;h1&gt;</span> is a Heading Element<span class="html-tag">&lt;/h1&gt;</span><br>
         <span class="html-tag">&lt;p&gt;</span>This is a paragraph Element<span class="html-tag">&lt;/p&gt;</span>
       </code>
     </section>
+
     <section class="main-section" id="Void_Element">
       <header>
-        <h1>
-          Void Element
-        </h1>
+        <h1>Void Element</h1>
       </header>
       <p>
         Some HTML elements, like
@@ -158,11 +173,10 @@
         are self-closing and don't have an end tag, as they represent an event or a visual element.
       </p>
     </section>
+
     <section class="main-section" id="Heading_Element">
       <header>
-        <h1>
-          Heading Element
-        </h1>
+        <h1>Heading Element</h1>
       </header>
       <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
       <p>
@@ -184,6 +198,7 @@
       </code>
     </section>
   </main>
+
 </body>
 
 </html>
