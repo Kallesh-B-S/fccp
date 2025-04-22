@@ -26,13 +26,16 @@ nav{
 nav header{
     background-color: rgb(190, 185, 185);
     padding-top: 10px;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
 }
 
 nav header h1{
     text-align: center;
-    margin: 0 10px 0 10px;
+    margin: 0 auto;
     background-color: whitesmoke;
     border-radius: 5px;
+    width: 100%;
 }
 
 .nav-body{
@@ -49,7 +52,7 @@ nav header h1{
     margin: 5px 10px;
     list-style: none;
     height: 95%;
-    width: 92%;
+    max-width: 92%;
     /* padding-top: 5px; */
 }
 
